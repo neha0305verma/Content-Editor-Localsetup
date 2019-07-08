@@ -42,6 +42,7 @@ org.ekstep.contenteditor.sidebarManager = new (Class.extend({
 	loadCustomTemplate: function (pluginId) {
 		var instance = this
 		var manifest = org.ekstep.pluginframework.pluginManager.getPluginManifest(pluginId)
+		console.log('custom template', instance, manifest)
 		manifest.editor.configManifest = manifest.editor.configManifest || []
 		_.forEach(manifest.editor.configManifest, function (config) {
 			if (config.type === 'custom_template') {

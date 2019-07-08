@@ -622,6 +622,7 @@ org.ekstep.contenteditor.basePlugin = Class.extend({
 	fromECML: function (data) {
 		var instance = this
 		this.attributes = data
+		console.log('from ecml', instance, this.attributes)
 		if (!_.isUndefined(this.attributes.data)) {
 			this.data = this.attributes.data.__cdata ? JSON.parse(this.attributes.data.__cdata) : this.attributes.data
 			delete this.attributes.data
@@ -656,6 +657,7 @@ org.ekstep.contenteditor.basePlugin = Class.extend({
 				}
 			}
 		}
+		console.log('attribute', this.attributes)
 		this.percentToPixel(this.attributes)
 	},
 

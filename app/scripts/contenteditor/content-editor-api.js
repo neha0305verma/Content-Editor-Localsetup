@@ -347,6 +347,7 @@ window.org.ekstep.contenteditor.api = {
      * @memberof org.ekstep.contenteditor.api
      */
 	instantiatePlugin: function (id, data, parent, override) {
+		console.log('initiate plugin i editor', id, data, parent, override)
 		return org.ekstep.pluginframework.pluginManager.invoke(id, data, parent, override)
 	},
 

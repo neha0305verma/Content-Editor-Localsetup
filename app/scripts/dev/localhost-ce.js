@@ -9,5 +9,6 @@ window.context = {
 		'logout': 'https://release.ekstep.in/index.php?option=com_easysocial&view=login&layout=logout'
 	},
 	'baseURL': 'https://release.ekstep.in/',
+	'framework': 'niit_tv',
 	'editMetaLink': '/component/ekcontent/contentform/do_10097535?Itemid=0'
 }

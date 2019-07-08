@@ -353,6 +353,7 @@ org.ekstep.pluginframework.pluginManager = new (Class.extend({
 				throw 'Error: when instantiating plugin: ' + id
 			}
 		}
+		console.log('p', p)
 		return p
 	},
 	invokeRenderer: function (id, data, parent, stage, theme) {
